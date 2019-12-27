@@ -9,7 +9,7 @@ class Footer extends React.Component {
       return (
         <div className="article">
         <footer className="site-footer">
-            &copy; by Scrow 2020   
+            inspired by Countdown movie - created by Scrow - 2020   
             <a href="https://github.com/S-crow"><FontAwesomeIcon style={{'color':'white', 'marginLeft': '20px'}} icon={faGithub} /></a>
             <a href="https://twitter.com/__Scrow__"><FontAwesomeIcon style={{'color':'white', 'marginLeft': '20px'}} icon={faTwitter} /></a>
         </footer>
