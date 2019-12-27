@@ -1,1 +1,1 @@
-## Coundown application
+## Countdown application
