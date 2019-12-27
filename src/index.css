@@ -1,0 +1,38 @@
+
+body {
+  background-color: #0C1114;
+}
+
+.container{
+margin: 0 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+  color: #8C0204;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-family: 'Denk One'; font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin-bottom: 20%;
+}
+
+#time{
+  color:white;
+  font-size: 3em;
+  margin: 0 15%;
+}
+
+.site-footer {
+  position: fixed;
+  left:0;bottom:0;right:0;
+  text-align: center;
+  padding: 0.6%;
+  width: '100%';
+  color: #F5F5F5;
+  background-color: #0C1114;
+}
