@@ -4,27 +4,29 @@ body {
 }
 
 .container{
-margin: 0 20%;
+margin: 5% 15%;
 display: flex;
-flex-direction: column;
 align-items: center;
-justify-content: center;
+flex-direction: column;
 }
 
 h1 {
+  text-align: center;
   color: #8C0204;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
   font-family: 'Denk One'; font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2em;
-  margin-bottom: 20%;
+  font-size: 2.1em;
+  margin-bottom: 13%;
+  filter: blur(1.5px);
 }
 
 #time{
-  color:white;
-  font-size: 3em;
-  margin: 0 15%;
+  text-align: center;
+  color:#FBFCFA;
+  font-size: 2.2em;
+  margin-top: 10px;
 }
 
 .site-footer {
@@ -33,16 +35,32 @@ h1 {
   text-align: center;
   padding: 0.6%;
   width: '100%';
-  color: #F5F5F5;
+  color: #FBFCFA;
   background-color: #0C1114;
 }
-.bouton18 {
+.bouton {
 	width:180px;
 	height:180px;
 	background:#8C0204;
-	font:bold 27px Arial;
+	font:bold 30px Arial;
 	border-radius:50%;
 	border:none;
   color: #0C1114;
 	
+}
+
+.bouton:hover {
+	width:180px;
+	height:180px;
+	background:#8C0204;
+	font:bold 30px Arial;
+	border-radius:50%;
+	border: 0.1rem solid;
+  color: #FBFCFA;
+  border-color: #FBFCFA;
+  filter: blur(1.5px);
+}
+
+* {
+  outline: 0;
 }

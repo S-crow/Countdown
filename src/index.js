@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Footer from './Footer';
 import { ClipLoader } from "react-spinners";
-// import {Animated} from "react-animated-css";
-
+import {Animated} from "react-animated-css";
+import Logo from "./logo.jpg"
 // import publicIp from "public-ip";
 
 
@@ -73,26 +73,29 @@ function CountdownTimer() {
         }, 2000);
     }
 
-    // if(true){
-        // return(
-        //     <div>     
-        //     <Animated animationIn="fadeIn" animationInDuration={2500} animationOut="fadeOut" animationOutDuration={2500} isVisible={this.state.open_close}>
-        //         <img id="loading" style= {{'width':window.screen.width,'height':window.screen.height}} alt="Loading" />
-        //     </Animated>
-        //     </div>
-        // );
-    // }
-    // else{
+    const [opening, setOpening] = React.useState(true);
+
+    if(opening){
+        setTimeout(() => {setOpening(false);}, 2500);
+
+        return(
+            <div>     
+                <img src={Logo} style= {{'width':window.screen.width,'height':window.screen.height}} alt="Loading" />
+            </div>
+        );
+    }
+
+    else{
         return (
             <div className="container">
               <h1>If you could find out exactly when you're going to die... would you want to know?</h1>
               <ClipLoader size={200} color={"#8C0204"} loading={loading}/>
                 {buttonclicked && !loading && <div id="time">{timerComponents.length ? timerComponents : <span>GoodBye!</span>}</div>}  
-                {!buttonclicked && <button className="bouton18" onClick={handleClick}>Hour of your Death</button>}          
+                {!buttonclicked && <button className="bouton" onClick={handleClick}>Hour of Death!</button>}          
               <Footer/>
             </div>      
         );
-    // }
+    }
 
 }
 
